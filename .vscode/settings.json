@@ -1,0 +1,16 @@
+{
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "make 🔃",
+            "tools": [
+                "make"
+            ]
+        },
+        
+    ],
+    "cSpell.words": [
+        "Gurdy",
+        "Hurdy"
+    ],
+    "cSpell.language": "en-GB"
+}

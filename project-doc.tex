@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, left = 35mm, top = 24mm, bottom = 24mm, right = 24mm]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{fontenc}
+\usepackage{times}
+\usepackage[ddmmyyyy]{datetime}
+\usepackage{pdfpages}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{epstopdf}
+\usepackage{dirtree}
+\usepackage{listings}
+
+%To make captions centered and italic
+\usepackage[format=plain, labelfont=bf, textfont=it, justification=centering]{caption}
+%To add custom indents to bullet points
+\usepackage{enumitem}
+
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+%//////////////////////////////////////////////////////////////////////////////////////////////
+%///////////////////////////////////// Title Page /////////////////////////////////////////////
+%//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+\begin{titlepage}
+
+    \newgeometry{left=4cm, right=4cm, top=4cm, bottom=4cm}
+    \begin{center}
+        
+        {\LARGE The Electronic Hurdy Gurdy Project}
+
+        {\Large Pete Alexander}
+        \vspace{5cm}
+        
+        {\LARGE Project Document}
+
+    \end{center}
+    \restoregeometry
+\end{titlepage}
+
+%//////////////////////////////////////////////////////////////////////////////////////////////
+%/////////////////////////////////// End Title Page ///////////////////////////////////////////
+%//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+\newpage
+\setcounter{tocdepth}{2}
+
+%TC:ignore
+\newpage
+\tableofcontents
+\newpage
+
+\setcounter{page}{1}
+\pagestyle{plain}
+
+\section{Introduction}
+\subsection{Document Overview}
+This is the project document for my Hurdy Gurdy project. 
+It serves as the central log of the aims, direction and scope of this project.
+Any change to any of these things will be accompanied by a release of this document. 
+I'm developing this project in a pretty agile way so this won't have too much detail (plus I'm doing this for fun).
+
+\subsection{Project Overview}
+This project aims to build an Electronic Hurdy Gurdy (google it).
+In its first iteration will be a MIDI instrument capable of emulating the interfaces of a traditional Hurdy Gurdy. 
+It is to be constructed to the same standard I hold my other musical instruments to (i.e. production-level).
+The following is a non-exhaustive list of the project's major parts.
+
+\begin{enumerate}
+    \item PCBs for control electronics and key interface.
+    \item Switch/Button interface for engaging the different virtual strings of the instrument. 
+    \item Firmware for control CPU to convert interface inputs to USB MIDI commands. 
+    \item 3D Printed Chassis and extras to hold electronics and interfaces.
+    \item Crank handle with motor interface. 
+\end{enumerate}
+
+The following is a list of extensions to the project that will follow the base prototype:
+
+\begin{enumerate}
+    \item Screen and encoder for selecting properties of the instrument (e.g. drone/trompet key).
+    \item "Button Board" add-on to crank handle for changing drone notes accordion-style.
+    \item Synthesizer add-on for on-board sound generation. 
+\end{enumerate}
+
+
+\section{Phases}
+This project will be split into phases to group key decision points by type.
+
+\subsection{Phase 1: Investigation}
+To start, different implementations of key features will be investigated to choose the best one. 
+This can come in the form of practical work (e.g. trying different MCU development boards).
+Or it can be paper work (e.g. finding a source of cheap aluminium extrusions). 
+
+\subsection{Phase 2: Development}
+Once all decision have been made, I will begin the development of the real hardware.
+This will be all of the non-destructive work that goes into the first prototype.
+This will be things like PCB design, code writing on dev-boards, testing small 3D printed parts.  
+
+\subsection{Phase 3: Prototype Construction}
+Once I've got all the designs for parts finished to a good standard, I will construct the first prototype.
+This will be a playable instrument that should produce "tight" music. 
+It will be pretty feature light but the design should enable easy expansion/tinkering. 
+
+\subsection{Phase \(\infty\): Expansion and Maintenance}
+Once the prototype is built, it's time to build on that success!
+I intend to use one version or another of this thing indefinitely. 
+This will require maintenance, probably quite a lot at first.
+I'd also like to expand features on top of the basics.
+I'd like to add some extra features and to tune it to my way of playing. 
+
+\end{document}
